@@ -7,8 +7,12 @@ import './FullScreenDiv.css';
 const FullScreenDiv = () => {
   return (
     <div className="fullscreen-div">
-      <FontAwesomeIcon icon={faBars} className="icon-left" />
-      <FontAwesomeIcon icon={faXmark} className="icon-right" />
+      <a href="#menu" className="icon-left">
+        <FontAwesomeIcon icon={faBars} />
+      </a>
+      <a href="#close" className="icon-right">
+        <FontAwesomeIcon icon={faXmark} />
+      </a>
     </div>
   );
 };
